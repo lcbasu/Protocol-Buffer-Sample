@@ -1,0 +1,9 @@
+﻿  AddressBook.cpp
+D:\protobuf-3.5.1\protobuf\src\google/protobuf/wire_format_lite.h(863): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+D:\protobuf-3.5.1\protobuf\src\google/protobuf/wire_format_lite.h(874): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+  Generating code
+  30 of 777 functions ( 3.9%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    10 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  AddressBook.vcxproj -> D:\Protocol Buffer Sample\ProjectProto\AddressBook\x64\Release\AddressBook.exe
