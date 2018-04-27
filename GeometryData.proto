@@ -1,0 +1,71 @@
+syntax = "proto2";
+
+package tutorial;
+
+message Matrix3x3 {
+  float a1 = 1; 
+  float a2 = 2;
+  float a3 = 3;
+  float b1 = 4;
+  float b2 = 5;
+  float b3 = 6;
+  float c1 = 7;
+  float c2 = 8;
+  float c3 = 9;
+}
+
+message Matrix4x4 {
+  float a1 = 1; 
+  float a2 = 2;
+  float a3 = 3;
+  float a4 = 4;
+  float b1 = 5;
+  float b2 = 6;
+  float b3 = 7;
+  float b4 = 8;
+  float c1 = 9;
+  float c2 = 10;
+  float c3 = 11;
+  float c4 = 12;
+  float d1 = 13;
+  float d2 = 14;
+  float d3 = 15;
+  float d4 = 16;
+}
+
+message Vector3 {
+  float x = 1;
+  float y = 2;
+  float z = 3;
+}
+
+message Vector3 {
+  float x = 1;
+  float y = 2;
+  float z = 3;
+  float w = 4;
+}
+
+message Face {
+  repeated int32 face_indices = 1;
+}
+
+message Mesh {
+  optional Vector3 mesh_vertices = 1;
+  optional Face mesh_faces = 2;
+}
+
+message Node {
+  optional Node node_parent = 1;
+  optional string node_name = 2;
+  optional Matrix4x4 node_transformation = 3;
+  
+  repeated Node node_children = 4;
+  repeated int32 node_mesh_indices = 5;
+}
+
+message Scene {
+  optional Node scene_root_node = 1;
+
+  repeated Mesh scene_meshes = 2;
+}
